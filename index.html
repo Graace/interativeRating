@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../icofont/icofont.min.css">
+  <title>Interactive rating component</title>
+</head>
+<body>
+  <div class="container">
+    <div class="rating_section">
+      <div class="icon">
+        <i class="icofont-star"></i>
+      </div>
+      
+      <div class="text">
+        <p class="text1">How did we do?</p>
+        <p>Please let us know how we did with your support request. All feedback is apprieciated to help us improve our offering!</p>
+      </div>
+  
+      <div class="list">
+        <ul class="ratings">
+          <li class="rating"  onclick="toggleCheckedState(this)">1</li>
+          <li class="rating"  onclick="toggleCheckedState(this)">2</li>
+          <li class="rating"  onclick="toggleCheckedState(this)">3</li>
+          <li class="rating"  onclick="toggleCheckedState(this)">4</li>
+          <li class="rating"  onclick="toggleCheckedState(this)">5</li>
+        </ul>
+      </div>
+    
+        <button class="btn" type="submit">Submit</button>
+     
+    </div>
+
+    <!-- thankYou section -->
+
+    <div class="thankYou_section hidden">
+      <img src="images/illustration-thank-you.svg" alt="">
+
+      <p class="text2">You selected  <span class="rate"></span> out of 5</p>
+
+      <div class="text">
+        <p class="text1">Thank you!</p>
+
+        <p>We appriciate you taking the time to give a rating. If you ever need more support, don't hesistate to get in touch!</p>
+      </div>
+      
+  <!-- <button class="btn rateAgain" type="submit">Rate Again</button> -->
+     
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

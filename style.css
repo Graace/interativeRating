@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family:"Overpass", sans-serif;
+  /* scroll-behavior: smooth; */
+}
+
+:root{
+  --bg-orange:hsl(25, 97%, 53%);
+  --bg-blue:hsl(213, 19%, 18%);
+  --bg-darkBlue:hsl(216, 12%, 8%);
+  --bg-meduimGrey:hsla(216, 12%, 54%,0.1);
+  --bg-grey:hsl(217, 12%, 54%);
+  --text-white:hsl(0, 0%, 100%);
+}
+
+body{
+  background: var(--bg-darkBlue);
+  /* font-size: 48px; */
+  color: var(--text-white);
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 100px;
+  
+}
+
+.container{
+  background:var(--bg-blue) ;
+  width: 96%;
+  max-width: 400px;
+  border-radius: 10px;
+  padding:30px;
+}
+
+.icon{
+  background: var(--bg-meduimGrey);
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  color: var(--bg-orange);
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.text{
+  margin-bottom: 30px;
+  color: var(--bg-grey);
+  line-height: 20px;
+}
+
+.text .text1{
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight:700;
+  color:var(--text-white);
+}
+
+.list{
+  margin-bottom: 30px;
+  text-align: center; 
+  cursor: pointer;
+}
+
+.list ul{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.list ul li{
+  background: var(--bg-meduimGrey);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  padding: 10px;
+  color: var(--bg-grey);
+  transition: background-color 400ms;
+}
+
+.list ul li:hover{
+  background: var(--bg-grey);
+  color: var(--text-white);
+}
+
+.list ul li.checked{
+  background: var(--bg-orange);
+  color:var(--text-white);
+}
+
+.btn{
+  border: none;
+  outline: none;
+  background: var(--bg-orange);
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 10px;
+  color: var(--text-white);
+  width: 100%;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: var(--bg-orange);
+  background: var(--text-white);
+}
+
+.hidden{
+  display: none;
+}
+
+.thankYou_section{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.thankYou_section img{
+  margin-bottom: 20px;
+}
+
+.thankYou_section  .text2{
+  background: var(--bg-meduimGrey);
+  border-radius: 30px;
+  width: 70%;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  padding: 5px 10px;
+  color: var(--bg-orange);
+}
